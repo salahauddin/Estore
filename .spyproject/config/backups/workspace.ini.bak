@@ -1,0 +1,10 @@
+[workspace]
+restore_data_on_startup = True
+save_data_on_exit = True
+save_history = True
+save_non_project_files = False
+
+[main]
+version = 0.2.0
+recent_files = ['Estore\\settings.py', 'comm1\\models.py', 'comm1\\template_context.py', 'comm1\\templates\\filters.html', 'comm1\\static\\product-filter.js', 'comm1\\views.py', 'comm1\\urls.py', 'comm1\\templates\\Ajax\\product-list.html', 'comm1\\templates\\Ajax\\cart-list.html', 'comm1\\templates\\product.html', 'comm1\\templates\\productlist.html', 'comm1\\static\\custom.js']
+

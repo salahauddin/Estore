@@ -1,0 +1,67 @@
+{% load static %}
+<script type="text/javascript" src="{% static 'product-filter.js' %}"></script>
+
+<h3 class="mb-4 border-bottom pb-1">Filters</h3>
+<div class="card md-4">
+    <h6 class="card-header">colors</h6>
+    <div class="list-group list-group-flush">
+            {% for color in colors %}
+            <li class="list-group-item">
+            <input class="filter-checkbox" data-filter="color" value="{{color.color__id}}" type="checkbox" />&nbsp;
+			<button class="btn" style="background-color: {{color.color__color_code}}; margin-top: -5px;"></button>
+            
+            </li>
+            
+            
+            {% endfor %}
+            
+            </div>
+        </div>
+        
+<div class="card md-4">
+    <h6 class="card-header">categories</h6>
+    <div class="list-group list-group-flush">
+            {% for cat in cats %}
+            <li class="list-group-item">
+            <input class="filter-checkbox" data-filter="category" value="{{cat.category__id}}" type="checkbox" />&nbsp;
+            {{ cat.category__title }}
+            
+            </li>
+            
+            
+            {% endfor %}
+            
+            </div>
+        </div>
+        
+<div class="card md-4">
+    <h6 class="card-header">brands</h6>
+    <div class="list-group list-group-flush">
+            {% for brand in brands %}
+            <li class="list-group-item">
+            <input class="filter-checkbox" data-filter="brand" value="{{brand.Brand__id}}" type="checkbox" />&nbsp;
+            {{ brand.Brand__title }}
+            
+            </li>
+            
+            
+            {% endfor %}
+            
+            </div>
+        </div>
+
+<div class="card md-4">
+    <h6 class="card-header">sizes</h6>
+    <div class="list-group list-group-flush">
+            {% for size in sizes %}
+            <li class="list-group-item">
+            <input class="filter-checkbox" data-filter="size" value="{{size.Sizes__id}}" type="checkbox" />&nbsp;
+            {{ size.Sizes__size }}
+            
+            </li>
+            
+            
+            {% endfor %}
+            
+            </div>
+        </div>
